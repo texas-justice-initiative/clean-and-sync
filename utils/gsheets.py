@@ -19,7 +19,7 @@ class Gsheets:
         body = {
             'range': sheet_range,
             'majorDimension': 'ROWS',
-            'values': [values],
+            'values': values,
         }
 
         self.service.spreadsheets().values().update(
