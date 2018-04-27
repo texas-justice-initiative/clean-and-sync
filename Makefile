@@ -1,7 +1,7 @@
 .DEFAULT_GOAL := build
 
 LAMBDA_DEPLOYMENT_PACKAGE=build/lambda.zip
-PYTHON_SOURCES="*.py scrapers/*.py utils/*.py"
+PYTHON_SOURCES="*.py utils/*.py"
 TMP_DIRECTORY=build/tmp
 
 build: clean
