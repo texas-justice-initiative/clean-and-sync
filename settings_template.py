@@ -7,8 +7,9 @@ GMAPS = {
 }
 
 GSHEETS = {
-    # json generated during service account key creation
+    # Json generated during service account key creation:
     # https://console.developers.google.com/apis/credentials
+    #
     # In the Google sheet: share with the 'client_email' and grant 'edit' rights
     'auth_params': {
         'type': 'service_account',
