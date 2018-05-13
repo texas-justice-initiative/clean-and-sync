@@ -1,7 +1,8 @@
+import settings
+from.utils.census import Census
 from utils.datadotworld import Datadotworld
 from utils.gmaps import Gmaps
 from utils.gsheets import Gsheets
-import settings
 
 
 def handle(event, context):
@@ -23,9 +24,10 @@ def handle(event, context):
     #     # Geocode if there's an address and it hasn't already been done
     #     if row[5] and not row[8] and not row[9]:  # TODO use the correct values
     #         lat, lng = gmaps.geocode(incident_address)
+    #         tracts = Census.reverse_geocode(lat, lng)
     #
     #         if lat and lng:
-    #             gsheets_cdr.update(f'range_here', [[lat, lng]])
+    #             gsheets_cdr.update(f'range_here', [[lat, lng, tracts]])
     # dw_cdr.sync()
     #
     # # OIS spreadsheet
@@ -36,9 +38,10 @@ def handle(event, context):
     #     # Geocode if there's an address and it hasn't already been done
     #     if row[5] and not row[8] and not row[9]:  # TODO use the correct values
     #         lat, lng = gmaps.geocode(incident_address)
+    #         tracts = Census.reverse_geocode(lat, lng)
     #
     #         if lat and lng:
-    #             gsheets_ois.update(f'range_here', [[lat, lng]])
+    #             gsheets_ois.update(f'range_here', [[lat, lng, tracts]])
     # dw_ois.sync()
 
     print('Done!')
