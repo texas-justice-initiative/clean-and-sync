@@ -28,7 +28,7 @@ class Census:
 
         r = requests.get(url, params=params)
         if r.status_code != 200:
-            print(f'Failed to geocode (lat: {lat}, lng: {lng})')
+            print(f'Failed to reverse geocode (lat: {lat}, lng: {lng})')
             r.raise_for_status()
 
         tracts = None

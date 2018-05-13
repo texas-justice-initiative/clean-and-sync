@@ -1,5 +1,5 @@
 import settings
-from.utils.census import Census
+from utils.census import Census
 from utils.datadotworld import Datadotworld
 from utils.gmaps import Gmaps
 from utils.gsheets import Gsheets
